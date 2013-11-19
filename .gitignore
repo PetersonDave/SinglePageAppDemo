@@ -7,6 +7,7 @@ Data/*
 Database/*
 Dependencies/*
 Website/*
+!Website/*.html
 !Website/site
 !Website/site/*
 
