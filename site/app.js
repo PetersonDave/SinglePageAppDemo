@@ -63,7 +63,7 @@
       function ($routeProvider) {
           $routeProvider.
             when('/profiles', {
-                templateUrl: '/views/dave',
+                templateUrl: 'site/views/editprofile.html',
                 controller: 'phonelist'
             }).
             when('/profiles/:profileId', {
