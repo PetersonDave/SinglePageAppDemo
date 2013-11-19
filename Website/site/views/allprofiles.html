@@ -1,0 +1,11 @@
+﻿<div data-ng-controller="allprofiles as vm">
+    <p><a class="btn btn-primary btn-lg" ng-click="vm.load();">Load Data</a></p>
+
+    <div class="row" ng-repeat="profile in vm.profiles">
+        <div class=" col-md-1">
+            <a class="btn btn-danger btn-small" href="#profiles/{{profile.id}}">Edit</a>
+        </div>
+        <div class="col-md-1">{{profile.id}}</div>
+        <div class="col-md-6">{{profile.first}}</div>
+    </div>
+</div>
