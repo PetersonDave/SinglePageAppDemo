@@ -26,25 +26,21 @@
             return items;
         };
 
-        // example update: https://github.com/herskinduk/Usergroup.ItemWebApi/blob/master/ItemConsole/UpdateExample.cs
         myProfileService.update = function (itemid, params) {
-            console.log(params);
-
-            var url = '-/item/v1/?sc_itemid=' + itemid;
-            $http.put(url, params);
+            // TBD
         };
 
         myProfileService.get = function (callback) {
             items = [];
             var i = {};
             i.id = "1";
-            i.first = "first name";
-            i.last = "last name";
-            i.email = "mail@email.com";
-            i.company = "my company";
+            i.first = "David";
+            i.last = "Peterson";
+            i.email = "dpeterson@isitedesign.com";
+            i.company = "ISITE Design";
 
             items.push(i);
-            
+
             callback();
         };
 
