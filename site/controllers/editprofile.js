@@ -8,19 +8,11 @@
     // Inject the dependencies. 
     // Point to the controller definition function.
     angular.module('app').controller(controllerId,
-        ['$scope', '$http', 'profileservice', editprofile]);
+        ['$scope', editprofile]);
 
-    function editprofile($scope, $http, profileservice) {
+    function editprofile($scope) {
         var vm = this;
 
         vm.newprofile = {};
-        vm.profileService = profileservice;
-        vm.load = function () {
-            profileservice.get(populateRepository);
-        };
-        
-        function populateRepository() {
-            vm.repository = profileservice.getProfiles();
-        }
     }
 })();
