@@ -11,7 +11,7 @@
     ]);
 
     // Sitecore field constants
-    app.factory('profilefields', function() {
+    app.factory('profilefields', function () {
         var myProfileFields = {};
 
         myProfileFields.first = '{13B74B58-A809-469D-9AC3-CA235CF54DCA}';
@@ -41,7 +41,7 @@
         // example update: https://github.com/herskinduk/Usergroup.ItemWebApi/blob/master/ItemConsole/UpdateExample.cs
         myProfileService.update = function (itemid, params) {
             console.log(params);
-            
+
             var url = '-/item/v1/?sc_itemid=' + itemid;
             $http.put(url, params);
         };
@@ -54,7 +54,7 @@
                     callback();
                 });
         };
-        
+
         return myProfileService;
     });
 
@@ -63,21 +63,21 @@
       function ($routeProvider) {
           $routeProvider.
             when('/profiles', {
-                templateUrl: '/views/dave',
-                controller: 'phonelist'
+                templateUrl: 'site/views/allprofiles.html',
+                controller: 'allprofiles'
             }).
             when('/profiles/:profileId', {
                 templateUrl: 'site/views/modifyprofile.html',
                 controller: 'modifyprofile'
             }).
             otherwise({
-                templateUrl: 'site/views/editprofile.html',
-                controller: 'editprofile'
+                templateUrl: 'site/views/main.html',
+                controller: 'main'
             });
       }],
-    '$httpProvider', function($httpProvider) {
+    '$httpProvider', function ($httpProvider) {
         $httpProvider.defaults.headers.put = { 'X-Scitemwebapi-Username': 'admin' };
-        $httpProvider.defaults.headers.put = { 'X-Scitemwebapi-Password': 'b' };        
+        $httpProvider.defaults.headers.put = { 'X-Scitemwebapi-Password': 'b' };
     });
 
     // Execute bootstrapping code and any dependencies.

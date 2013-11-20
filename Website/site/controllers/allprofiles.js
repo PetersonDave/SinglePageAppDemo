@@ -2,15 +2,15 @@
     'use strict';
 
     // Controller name is handy for logging
-    var controllerId = 'editprofile';
+    var controllerId = 'allprofiles';
 
     // Define the controller on the module.
     // Inject the dependencies. 
     // Point to the controller definition function.
     angular.module('app').controller(controllerId,
-        ['$scope', '$http', 'profileservice', editprofile]);
+        ['$scope', '$http', 'profileservice', allprofiles]);
 
-    function editprofile($scope, $http, profileservice) {
+    function allprofiles($scope, $http, profileservice) {
         var vm = this;
 
         vm.newprofile = {};
@@ -18,7 +18,7 @@
         vm.load = function () {
             profileservice.get(populateRepository);
         };
-        
+
         function populateRepository() {
             vm.repository = profileservice.getProfiles();
         }

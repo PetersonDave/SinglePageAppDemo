@@ -34,5 +34,5 @@
 
             profileservice.update(vm.itemid, params);
         }
-    }    
+    }
 })();

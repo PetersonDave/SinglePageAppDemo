@@ -89,7 +89,8 @@
 
         <!-- Bootstrapping -->
         <script src="/site/app.js"></script>
-        <script src="/site/controllers/editprofile.js"></script>
+        <script src="/site/controllers/main.js"></script>
+        <script src="/site/controllers/allprofiles.js"></script>
         <script src="/site/controllers/modifyprofile.js"></script>
   </form>  
 </body>
