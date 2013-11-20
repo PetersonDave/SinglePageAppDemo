@@ -104,6 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApi\AbortSitecoreForKnownRoutes.cs" />
+    <Compile Include="WebApi\RegisterWebApiRoute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="site\_resources\js\bootstrap-3.0.1-dist\dist\fonts\glyphicons-halflings-regular.eot" />

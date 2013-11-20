@@ -10,6 +10,8 @@ Website/*
 !Website/*.sln
 !Website/*.csproj
 !Website/*.html
+!Website/webapi
+!Website/webapi/*
 !Website/site
 !Website/site/*
 
