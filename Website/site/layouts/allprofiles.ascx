@@ -1,4 +1,5 @@
-﻿<div data-ng-controller="allprofiles as vm">
+﻿<%@ Control Language="c#" AutoEventWireup="true" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
+<div data-ng-controller="allprofiles as vm">
     <p><a class="btn btn-primary btn-lg" ng-click="vm.load();">Load Data</a></p>
 
     <div class="row" ng-repeat="profile in vm.repository">

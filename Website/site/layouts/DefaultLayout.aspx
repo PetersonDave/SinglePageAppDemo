@@ -1,4 +1,5 @@
 ﻿<%@ Page language="c#" Codepage="65001" AutoEventWireup="true" %>
+<%@ Register TagPrefix="sc" Namespace="Sitecore.Web.UI.WebControls" Assembly="Sitecore.Analytics" %>
 <%@ OutputCache Location="None" VaryByParam="none" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app">
@@ -89,10 +90,11 @@
 
         <!-- Bootstrapping -->
         <script src="/site/app.js"></script>
+        <script src="/site/config.route.js"></script>
         <script src="/site/controllers/main.js"></script>
         <script src="/site/controllers/allprofiles.js"></script>
         <script src="/site/controllers/modifyprofile.js"></script>
-  </form>  
+    </form>  
 </body>
 
 </html>

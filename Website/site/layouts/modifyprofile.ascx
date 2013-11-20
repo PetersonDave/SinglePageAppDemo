@@ -1,4 +1,5 @@
-﻿<div data-ng-controller="modifyprofile as vm">
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="modifyprofile.ascx.cs" Inherits="SinglePageApp.site.layouts.modifyprofile" %>
+<div data-ng-controller="modifyprofile as vm">
     New Item: {{vm}}<br />
     <fieldset>
         <legend>Profile</legend>

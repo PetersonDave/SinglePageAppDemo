@@ -50,6 +50,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Kernel, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SinglePageApp\Website\bin\Sitecore.Kernel.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -78,16 +82,18 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Global.asax" />
     <Content Include="site\app.js" />
+    <Content Include="site\config.route.js" />
     <Content Include="site\controllers\modifyprofile.js" />
     <Content Include="site\controllers\allprofiles.js" />
     <Content Include="site\controllers\main.js" />
     <Content Include="site\layouts\Advertisement.ascx" />
+    <Content Include="site\layouts\allprofiles.ascx" />
     <Content Include="site\layouts\DefaultLayout.aspx" />
+    <Content Include="site\layouts\main.ascx" />
+    <Content Include="site\layouts\modifyprofile.ascx" />
     <Content Include="site\layouts\PartialView.aspx" />
-    <Content Include="site\views\main.html" />
-    <Content Include="site\views\modifyprofile.html" />
-    <Content Include="site\views\allprofiles.html" />
     <Content Include="site\_resources\css\spa.animate.css" />
     <Content Include="site\_resources\js\angularJS.Core-1.2.0-rc3\angular-animate.js" />
     <Content Include="site\_resources\js\angularJS.Core-1.2.0-rc3\angular-animate.min.js" />
@@ -106,11 +112,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="site\handlers\SinglePageAppItemResolver.cs" />
     <Compile Include="site\layouts\Advertisement.ascx.cs">
       <DependentUpon>Advertisement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="site\layouts\Advertisement.ascx.designer.cs">
       <DependentUpon>Advertisement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="site\layouts\allprofiles.ascx.cs">
+      <DependentUpon>allprofiles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\layouts\allprofiles.ascx.designer.cs">
+      <DependentUpon>allprofiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="site\layouts\main.ascx.cs">
+      <DependentUpon>main.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\layouts\main.ascx.designer.cs">
+      <DependentUpon>main.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="site\layouts\modifyprofile.ascx.cs">
+      <DependentUpon>modifyprofile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site\layouts\modifyprofile.ascx.designer.cs">
+      <DependentUpon>modifyprofile.ascx</DependentUpon>
     </Compile>
     <Compile Include="WebApi\AbortSitecoreForKnownRoutes.cs" />
     <Compile Include="WebApi\RegisterWebApiRoute.cs" />
@@ -123,7 +152,15 @@
     <Content Include="site\_resources\js\angularJS.Core-1.2.0-rc3\angular-animate.min.js.map" />
     <Content Include="site\_resources\js\angularJS.Core-1.2.0-rc3\angular-route.min.js.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
