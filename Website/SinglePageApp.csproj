@@ -100,7 +100,7 @@
     <Content Include="site\_resources\js\bootstrap-3.0.1-dist\dist\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="site\_resources\js\bootstrap-3.0.1-dist\dist\js\bootstrap.js" />
     <Content Include="site\_resources\js\bootstrap-3.0.1-dist\dist\js\bootstrap.min.js" />
-    <Content Include="SpaWithoutSitecore.html" />
+    <Content Include="SpaWithSitecoreWebApi.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
