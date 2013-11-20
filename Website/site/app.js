@@ -63,16 +63,16 @@
       function ($routeProvider) {
           $routeProvider.
             when('/profiles', {
-                templateUrl: 'site/views/editprofile.html',
-                controller: 'phonelist'
+                templateUrl: 'site/views/allprofiles.html',
+                controller: 'allprofiles'
             }).
             when('/profiles/:profileId', {
                 templateUrl: 'site/views/modifyprofile.html',
                 controller: 'modifyprofile'
             }).
             otherwise({
-                templateUrl: 'site/views/editprofile.html',
-                controller: 'editprofile'
+                templateUrl: 'site/views/main.html',
+                controller: 'main'
             });
       }],
     '$httpProvider', function($httpProvider) {
