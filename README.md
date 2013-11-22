@@ -8,6 +8,12 @@ Follow these steps to install the demo site onto an existing Sitecore site:
 2. Install package Data\packages\Single-Page-App-Demo.zip to create the root application item, layouts, renderings and sample data.
 3. Install the Sitecore Item Web API from SDN
 
+Branches
+========
+1. *without-sitecore:* Example SPA by itself
+2. *with-sitecore-webapi:* Example SPA with content by way of Sitecore Item Web API
+3. *with-sitecore-integrated:* Example SPA fully integrated into Sitecore
+
 Dependencies
 ============
 1. AngularJS
