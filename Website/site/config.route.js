@@ -16,7 +16,7 @@
         $routeProvider.otherwise({ redirectTo: '/' });
     }
 
-    // Define the routes 
+    // Define the routes - templateUrls are all Sitecore items! Sitecore now serves our views :)
     function getRoutes() {
         return [
         {

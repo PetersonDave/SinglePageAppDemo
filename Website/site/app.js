@@ -59,26 +59,7 @@
     });
 
     //// Application routing
-    //app.config(['$routeProvider',
-    //  function ($routeProvider) {
-    //      $routeProvider.
-    //        when('/profiles', {
-    //            templateUrl: 'site/views/allprofiles.html',
-    //            controller: 'allprofiles'
-    //        }).
-    //        when('/profiles/:profileId', {
-    //            templateUrl: 'site/views/modifyprofile.html',
-    //            controller: 'modifyprofile'
-    //        }).
-    //        otherwise({
-    //            templateUrl: 'site/views/main.html',
-    //            controller: 'main'
-    //        });
-    //  }],
-    //'$httpProvider', function ($httpProvider) {
-    //    $httpProvider.defaults.headers.put = { 'X-Scitemwebapi-Username': 'admin' };
-    //    $httpProvider.defaults.headers.put = { 'X-Scitemwebapi-Password': 'b' };
-    //});
+	// Moved to config.route.js
 
     // Execute bootstrapping code and any dependencies.
     app.run(['$q', '$rootScope',
