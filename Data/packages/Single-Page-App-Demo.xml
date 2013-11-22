@@ -1,0 +1,64 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Single-Page-App-Demo</PackageName>
+      <Author>David Peterson</Author>
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/content/Home/Advertisements/{E94CD232-109E-4DCF-A8A1-CD4B980118B6}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Advertisements/example 1/{75F5E608-3ABD-4ADB-8204-23A748126FD8}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Advertisements/example 2/{796A6696-A44E-4FDC-9BA5-645EC72E3700}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Advertisements/example 3/{BC9430E4-9063-49FF-A965-B5EF85A3CFDB}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Repository/{62E790BA-A73E-4CA3-B00F-A7C489D51A42}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Repository/Amy/{F5B1B44B-A194-4D2E-8E40-68B721EBD04D}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Repository/Dave/{BD0FBDDA-5CB4-41C0-85CC-2E82C9F94326}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Repository/Emily/{95441501-796C-4D35-9191-0448AD477E1E}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Repository/Joe/{514D7794-5AF2-48F6-A36F-B708BB42C40D}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Views/{24131803-20A0-41CD-982D-4EB1EFF76FEA}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Views/allprofiles/{33A7F080-40CC-44B5-A505-0C74AB61981D}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Views/main/{A56A4289-D32F-463F-95A1-89E6AAC6B628}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/Views/modifyprofile/{8E201A83-0945-4B98-9D2B-D806917E4551}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/DefaultLayout/{9A8EF020-4067-45EB-B0ED-31D6E9838FD3}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/PartialView/{8CD8516E-0656-42CD-8019-8A6769D26083}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Advertisement/{D62A2ABF-7F28-4101-A512-0A2A094772DD}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/allprofiles/{8451FC79-FDCB-4725-A544-D4953ADF01B8}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/main/{E4F55778-467F-40FF-94C3-05E8D66ABE84}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/modifyprofile/{013A61F9-6C5A-4110-BC10-46567060A132}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/TestSublayout/{CCA54C77-AF4E-4430-9E41-01D233DFEA4E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/Advertisement/{C902F8B5-208C-41A3-ADAC-C2A5847C68D9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/partial-view/{5659D289-7861-44E2-9A52-157441CDFBD1}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/User Defined/profile/{24EFD608-A6D7-403D-91A1-641BC5A68B5F}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>everything</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
