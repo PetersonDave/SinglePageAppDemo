@@ -10,9 +10,9 @@ Follow these steps to install the demo site onto an existing Sitecore site:
 
 Branches
 ========
-1. *without-sitecore:* Example SPA by itself
-2. *with-sitecore-webapi:* Example SPA with content by way of Sitecore Item Web API
-3. *with-sitecore-integrated:* Example SPA fully integrated into Sitecore
+1. *without-sitecore:* Example SPA by itself (App start utl: /SpaWithoutSitecore.html)
+2. *with-sitecore-webapi:* Example SPA with content by way of Sitecore Item Web API (App start utl: /SpaWithSitecoreWebApi.html)
+3. *with-sitecore-integrated:* Example SPA fully integrated into Sitecore (App start utl: /)
 
 Dependencies
 ============

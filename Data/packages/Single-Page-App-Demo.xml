@@ -41,11 +41,21 @@
         <x-item>/master/sitecore/templates/User Defined/Advertisement/{C902F8B5-208C-41A3-ADAC-C2A5847C68D9}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/User Defined/partial-view/{5659D289-7861-44E2-9A52-157441CDFBD1}/invariant/0</x-item>
         <x-item>/master/sitecore/templates/User Defined/profile/{24EFD608-A6D7-403D-91A1-641BC5A68B5F}/invariant/0</x-item>
+        <x-item>/master/sitecore/content/Home/{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}/invariant/0</x-item>
       </Entries>
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </ItemToEntryConverter>
       </Converter>
       <Include />
