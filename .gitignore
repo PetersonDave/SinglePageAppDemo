@@ -7,6 +7,8 @@ Data/*
 Database/*
 Dependencies/*
 Website/*
+!Data/Packages
+!Data/Packages/*
 !Website/*.sln
 !Website/*.csproj
 !Website/*.html
