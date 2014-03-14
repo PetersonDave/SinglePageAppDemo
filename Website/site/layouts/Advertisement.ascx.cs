@@ -22,8 +22,11 @@ namespace SinglePageApp.site.layouts
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            frCopy.Item = DataSource;
-            frHeading.Item = DataSource;
+            if (DataSource != null)
+            {
+                frCopy.Item = DataSource;
+                frHeading.Item = DataSource;
+            }
         }
     }
 }

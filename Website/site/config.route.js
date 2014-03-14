@@ -13,7 +13,7 @@
         routes.forEach(function (r) {
             $routeProvider.when(r.url, r.config);
         });
-        $routeProvider.otherwise({ redirectTo: '/' });
+        $routeProvider.otherwise({ redirectTo: '/main' });
     }
 
     // Define the routes - templateUrls are all Sitecore items! Sitecore now serves our views :)
@@ -32,7 +32,7 @@
                 controller: 'modifyprofile'
             }
         }, {
-            url: '/',
+            url: '/main',
             config: {
                 templateUrl: 'Views/main',
                 controller: 'main'
